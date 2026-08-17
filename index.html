@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#684397">
+  <title>紫光金库</title>
+  <style>
+    :root{--ink:#261e36;--muted:#7b718a;--paper:#fffaff;--purple:#7652a8;--dark:#573584;--pale:#e9dff5;--line:#e4ddea;--rose:#a35468}
+    *{box-sizing:border-box}html{background:#f7f3fb}body{margin:0;color:var(--ink);background:radial-gradient(circle at 4% 3%,#fff,transparent 25%),linear-gradient(135deg,#faf7fd,#f0e9f8);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}button,input{font:inherit}button{touch-action:manipulation}main{min-height:100vh;padding:22px 14px 30px}.shell{width:min(680px,100%);margin:auto}.top{display:flex;align-items:center;gap:12px;margin:2px 3px 20px}.mark{width:46px;height:46px;border-radius:15px;display:grid;place-items:center;background:var(--purple);color:white;font-family:serif;font-size:22px;box-shadow:0 8px 20px #7652a844}.eyebrow{margin:0 0 2px;color:var(--muted);font-size:11px;letter-spacing:.15em}h1{margin:0;font-family:"Songti SC",serif;font-size:23px;letter-spacing:.08em}.hero{position:relative;overflow:hidden;padding:34px 26px;border-radius:25px;color:white;background:linear-gradient(125deg,#8258b8,#4d2c78);box-shadow:0 18px 42px #502d7838}.hero:after{content:"";position:absolute;width:230px;height:230px;border:1px solid #ffffff25;border-radius:50%;right:-80px;top:-110px;box-shadow:0 0 0 35px #ffffff09,0 0 0 70px #ffffff06}.hero p{margin:0 0 12px;color:#eee2fa;font-size:14px}.hero strong{position:relative;z-index:1;display:block;font-family:Georgia,serif;font-size:44px;font-weight:500;letter-spacing:-.03em}.hero span{display:block;margin-top:15px;color:#dfcfee;font-size:12px}.card{margin-top:18px;padding:23px;background:#fffafee8;border:1px solid #e4ddea;border-radius:21px;box-shadow:0 10px 30px #55376e12}.heading{display:flex;align-items:center;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--line)}.step{padding:7px 9px;border-radius:9px;color:var(--purple);background:var(--pale);font-family:Georgia,serif;font-size:11px}.heading h2{margin:0 0 3px;font-family:"Songti SC",serif;font-size:19px}.heading p{margin:0;color:var(--muted);font-size:11px}form{display:grid;gap:16px;padding-top:20px}fieldset{margin:0;padding:0;border:0}legend,label>span{display:block;margin-bottom:8px;color:#635873;font-size:13px;font-weight:600}.switch{display:grid;grid-template-columns:1fr 1fr;gap:8px}.switch label{height:44px;display:grid;place-items:center;border:1px solid #ddd4e6;border-radius:11px;background:#fffefa;cursor:pointer}.switch label.active{color:#684397;border-color:#8760b6;background:#eee5f8}.switch label.withdraw.active{color:#9b4b60;border-color:#c88799;background:#f9e8ee}.switch input{position:absolute;opacity:0}.switch span{margin:0;color:inherit;font-size:14px}input{width:100%;height:48px;padding:0 14px;border:1px solid #d8d0df;border-radius:11px;color:var(--ink);background:#fff;outline:none;font-size:16px}input:focus{border-color:var(--purple);box-shadow:0 0 0 3px #7652a81b}.money{position:relative}.money b{position:absolute;left:15px;top:13px;color:var(--purple)}.money input{padding-left:36px;font-weight:650}.submit{height:49px;border:0;border-radius:12px;color:#fff;background:var(--purple);font-weight:650;letter-spacing:.06em;box-shadow:0 8px 18px #7652a832}.submit.withdraw{background:var(--rose)}.status{min-height:16px;margin:-5px 0 0;color:var(--purple);font-size:12px;text-align:center}.search{position:relative;display:block;margin-top:18px}.search input{padding:0 40px;background:#faf7fd}.search:before{content:"⌕";position:absolute;left:13px;top:11px;color:#806f92;font-size:20px}.search input{padding-left:40px}.list{margin-top:8px}.result{margin:10px 3px 2px;color:var(--muted);font-size:11px}.row{display:grid;grid-template-columns:40px 1fr auto 28px;align-items:center;gap:9px;padding:14px 2px;border-bottom:1px solid #e9e3ed}.row:last-child{border:0}.icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;color:var(--dark);background:#eee5f7;font-weight:700}.row.withdrawal .icon{color:#9b4b60;background:#f8e7ec}.detail h3{display:flex;align-items:center;gap:6px;margin:0 0 4px;font-size:14px}.detail em{padding:2px 6px;border-radius:5px;color:#70508e;background:#eee5f7;font-size:9px;font-style:normal}.withdrawal .detail em{color:#9b4b60;background:#f8e7ec}.detail p{margin:0;color:var(--muted);font-size:11px}.amount{color:var(--purple);font-family:Georgia,serif;font-size:14px;white-space:nowrap}.withdrawal .amount{color:var(--rose)}.delete{width:28px;height:28px;border:0;border-radius:8px;color:#9a90a1;background:transparent;font-size:20px}.empty{min-height:180px;display:grid;place-items:center;align-content:center;color:#8b8192;text-align:center}.empty b{width:50px;height:50px;display:grid;place-items:center;border-radius:16px;color:var(--purple);background:var(--pale);font-size:20px}.empty h3{margin:13px 0 4px;color:var(--ink);font-size:14px}.empty p{margin:0;font-size:11px}.tools{display:flex;justify-content:center;gap:10px;margin-top:17px}.tools button,.file-label{padding:9px 12px;border:1px solid #ddd4e6;border-radius:10px;color:#6e5b7d;background:#fffaff;font-size:11px;cursor:pointer}.file-label input{display:none}.note{margin:13px 0 0;color:#918796;font-size:10px;text-align:center;line-height:1.5}footer{padding:23px 0 2px;color:#8b8192;font-size:11px;text-align:center}@media(min-width:760px){main{padding-top:38px}.card{padding:28px}.hero{padding:42px 38px}.hero strong{font-size:56px}}
+  </style>
+</head>
+<body>
+<main><div class="shell">
+  <header class="top"><div class="mark">存</div><div><p class="eyebrow">替朋友好好保管</p><h1>紫光金库</h1></div></header>
+  <section class="hero"><p>金库当前余额</p><strong id="total">¥0.00</strong><span id="count">从第一笔记录开始吧</span></section>
+  <section class="card"><div class="heading"><span class="step">01</span><div><h2>记一笔</h2><p>存钱或取钱，都在这里登记</p></div></div>
+    <form id="form"><fieldset><legend>类型</legend><div class="switch"><label id="depositLabel" class="active"><input type="radio" name="type" value="deposit" checked><span>＋ 存钱</span></label><label id="withdrawLabel" class="withdraw"><input type="radio" name="type" value="withdrawal"><span>－ 取钱</span></label></div></fieldset>
+      <label><span>日期</span><input id="date" type="date" required></label>
+      <label><span>什么平台</span><input id="platform" maxlength="40" placeholder="例如：微信、支付宝、银行卡" required></label>
+      <label><span>多少钱</span><div class="money"><b>¥</b><input id="money" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="0.00" required></div></label>
+      <button id="submit" class="submit" type="submit">记下这笔存钱</button><p id="status" class="status"></p>
+    </form>
+  </section>
+  <section class="card"><div class="heading"><span class="step">02</span><div><h2>收支记录</h2><p>搜索平台，每一笔都清清楚楚</p></div></div>
+    <label class="search"><input id="search" type="search" placeholder="搜索平台，例如：微信" aria-label="搜索平台记录"></label><div id="records" class="list"></div>
+    <div class="tools"><button id="export" type="button">导出备份</button><label class="file-label">恢复备份<input id="import" type="file" accept="application/json"></label></div><p class="note">记录只保存在当前浏览器。请偶尔导出备份，清理 Safari 网站数据或更换手机可能会使记录丢失。</p>
+  </section><footer>每一笔，都替你们认真记着</footer>
+</div></main>
+<script>
+  const KEY='purple-vault-records-v1';
+  let records=[];
+  const $=id=>document.getElementById(id);
+  const esc=s=>String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+  const currency=cents=>new Intl.NumberFormat('zh-CN',{style:'currency',currency:'CNY',minimumFractionDigits:2}).format(cents/100);
+  const prettyDate=value=>{const [y,m,d]=value.split('-');return `${y}年${Number(m)}月${Number(d)}日`};
+  function load(){try{const value=JSON.parse(localStorage.getItem(KEY)||'[]');records=Array.isArray(value)?value:[]}catch{records=[]}}
+  function save(){localStorage.setItem(KEY,JSON.stringify(records))}
+  function render(){
+    const total=records.reduce((sum,r)=>sum+(r.type==='withdrawal'?-r.amountCents:r.amountCents),0);
+    $('total').textContent=currency(total);$('count').textContent=records.length?`由 ${records.length} 笔记录组成`:'从第一笔记录开始吧';
+    const q=$('search').value.trim().toLowerCase();const shown=q?records.filter(r=>r.platform.toLowerCase().includes(q)):records;
+    if(!records.length){$('records').innerHTML='<div class="empty"><div><b>✦</b><h3>还没有记录</h3><p>在上面记下第一笔钱吧</p></div></div>';return}
+    if(!shown.length){$('records').innerHTML='<div class="empty"><div><b>⌕</b><h3>没有找到相关记录</h3><p>换个平台名称试试看</p></div></div>';return}
+    $('records').innerHTML=(q?`<p class="result">找到 ${shown.length} 笔“${esc($('search').value.trim())}”记录</p>`:'')+shown.map(r=>`<article class="row ${r.type}"><div class="icon">${esc(r.platform.slice(0,1))}</div><div class="detail"><h3>${esc(r.platform)}<em>${r.type==='deposit'?'存钱':'取钱'}</em></h3><p>${prettyDate(r.date)}</p></div><strong class="amount">${r.type==='deposit'?'+':'−'} ${currency(r.amountCents)}</strong><button class="delete" data-id="${r.id}" aria-label="删除记录">×</button></article>`).join('');
+  }
+  function setType(type){const withdraw=type==='withdrawal';$('depositLabel').classList.toggle('active',!withdraw);$('withdrawLabel').classList.toggle('active',withdraw);$('submit').classList.toggle('withdraw',withdraw);$('submit').textContent=withdraw?'记下这笔取钱':'记下这笔存钱'}
+  $('form').addEventListener('change',e=>{if(e.target.name==='type')setType(e.target.value)});
+  $('form').addEventListener('submit',e=>{e.preventDefault();const type=document.querySelector('input[name="type"]:checked').value;const amount=Math.round(Number($('money').value)*100);const platform=$('platform').value.trim();if(!platform||!Number.isSafeInteger(amount)||amount<=0)return;records.unshift({id:Date.now(),date:$('date').value,platform,amountCents:amount,type});save();render();$('platform').value='';$('money').value='';$('status').textContent=type==='deposit'?'这笔存钱已经记下啦。':'这笔取钱已经记下啦。';setTimeout(()=>$('status').textContent='',2200)});
+  $('search').addEventListener('input',render);
+  $('records').addEventListener('click',e=>{const button=e.target.closest('[data-id]');if(!button||!confirm('确定删除这笔记录吗？'))return;records=records.filter(r=>String(r.id)!==button.dataset.id);save();render()});
+  $('export').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(records,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`紫光金库备份-${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(a.href)});
+  $('import').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{const data=JSON.parse(await file.text());if(!Array.isArray(data))throw 0;if(records.length&&!confirm('恢复备份会覆盖当前记录，确定继续吗？'))return;records=data;save();render();$('status').textContent='备份已恢复。'}catch{alert('这个备份文件无法读取。')}e.target.value=''});
+  const now=new Date();$('date').value=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;load();render();
+</script>
+</body></html>
